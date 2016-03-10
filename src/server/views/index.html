@@ -5,211 +5,184 @@
 
 {% block content %}
 
-  <div class="container">
-
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>< 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Homepage</title>
-
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cosmo/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Shoes</a>
-          </div>
-
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="products.html">All</a></li>
-                  <li><a href="#">Men</a></li>
-                  <li><a href="#">Women</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Sale</a></li>
-                </ul>
-              </li>
-              <li class="active"><a href="#">About<span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Contact</a></li>  need to link to footer
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="checkout.html">Checkout: <span>2</span> </a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <div id="carousel-container" class="carousel slide" data-ride="carousel">
-         Indicators
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-container" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-container" data-slide-to="1"></li>
-          <li data-target="#carousel-container" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="http://placehold.it/450x450" alt="...">
-            <div class="carousel-caption">
-              Cap-Toe Oxfords <br>
-              $99.99
-            </div>
-          </div>
-          <div class="item">
-            <img src="http://placehold.it/450x450" alt="...">
-            <div class="carousel-caption">
-              Slingback Pumps <br>
-              $129.99
-            </div>
-          </div>
-          <div class="item">
-            <img src="http://placehold.it/450x450" alt="...">
-            <div class="carousel-caption">
-              Trainers <br>
-              $79.99
-            </div>
-          </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-container" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-container" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+<div class="wrapper">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Shoes</a>
       </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Products <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/products">All</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Sale</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="#">About<span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Contact</a></li>  need to link to footer
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/checkout">Checkout: <span>2</span> </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-      <!-- new arrivals text for (3 products in a row) -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-              <h2 class="text-center">New Arrivals</h2><br>
-          </div>
-        </div>
-        <!-- (3 products in a row) images + captions -->
-        <div class="row">
-            <div class="col-md-4">
-              <img class="center-block" src="http://placehold.it/250x250">
-              <h4 class="text-center">Cap-Toe Oxfords</h4>
-              <p class="text-center">$99.99</p>
-            </div>
-            <div class="col-md-4">
-              <img class="center-block" src="http://placehold.it/250x250">
-              <h4 class="text-center">Slingback Pumps</h4>
-              <p class="text-center">$129.99</p>
-            </div>
-            <div class="col-md-4">
-              <img class="center-block" src="http://placehold.it/250x250">
-              <h4 class="text-center">Trainers</h4>
-              <p class="text-center">$79.99</p>
-            </div>
+  <div id="carousel-container" class="carousel slide" data-ride="carousel">
+     Indicators
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-container" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-container" data-slide-to="1"></li>
+      <li data-target="#carousel-container" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="http://placehold.it/450x450" alt="...">
+        <div class="carousel-caption">
+          Cap-Toe Oxfords <br>
+          $99.99
         </div>
       </div>
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-             <div class="thumbnail center well well-sm text-center">
-                <h2>Sign up Today!</h2>
-                    <p>Subscribe to our weekly Newsletter and stay tuned to our new product announcements. Be the first to hear about upcoming live events.  Read about the latest spring fashions and global trends in the world of outdoor and casual footwear. </p>
-                     <div class="form-group">
-                        <div class="input-group">
-                          <span class="input-group-addon"></span>
-                            <input type="text" class="form-control" placeholder="your@email.com">
-                            <span class="input-group-btn">
-                          <button class="btn btn-default" type="button">Sign up</button>
-                        </span>
-                    </div>
-                  </div>  
-                </div>    
-            </div>
+      <div class="item">
+        <img src="http://placehold.it/450x450" alt="...">
+        <div class="carousel-caption">
+          Slingback Pumps <br>
+          $129.99
+        </div>
+      </div>
+      <div class="item">
+        <img src="http://placehold.it/450x450" alt="...">
+        <div class="carousel-caption">
+          Trainers <br>
+          $79.99
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container-fluid">
-        <div class="row">    
-          <div class="col-md-3">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d392565.2037547804!2d-105.13529645012136!3d39.76400211690762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b80aa231f17cf%3A0x118ef4f8278a36d6!2sDenver%2C+CO!5e0!3m2!1sen!2sus!4v1453852883737" width="150" height="150" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="col-md-3">
-            <h4>Products That We Love</h4>
-            <table class="lamp">
-            <tr>
-              <th>
-                <img src="http://orig05.deviantart.net/1dcf/f/2012/311/a/1/pokemon_yellow___haunter_animated_50x50_by_kimihro-d5kbjj5.gif">
-              </th>
-              <td>
-                 Shoes
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <img src="http://orig05.deviantart.net/1dcf/f/2012/311/a/1/pokemon_yellow___haunter_animated_50x50_by_kimihro-d5kbjj5.gif">
-              </th>
-              <td>
-                 More Shoes
-              </td>
-            </tr>
-            <tr>
-              <th>
-                <img src="http://orig05.deviantart.net/1dcf/f/2012/311/a/1/pokemon_yellow___haunter_animated_50x50_by_kimihro-d5kbjj5.gif">
-              </th>
-              <td>
-                 <a href="http://glerupsusa.com/">All The Shoes!</a>
-              </td>
-            </tr>
-            </table>
-          </div>
-          <div class="col-md-3">
-            <h4>Connect With Us!</h4>
-            <ul>
-              <li><a href="https://www.facebook.com/">Facebook</a></li>
-              <li><a href="https://www.twitter.com/">Twitter</a></li>
-              <li><a href="https://www.instagram.com/">Instagram</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h4>Favorite Colors</h4>
-            <ul>
-              <li>Rainbow</li>
-              <li>Blue</li>
-              <li>Green</li>
-            </ul>
-          </div>
-        </div> <!-- end .row -->
-      </div> <!-- end .container-fluid -->
-    </footer>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-  </body>
 
-
-
-
-
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-container" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-container" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
+
+  <!-- new arrivals text for (3 products in a row) -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+          <h2 class="text-center">New Arrivals</h2><br>
+      </div>
+    </div>
+    <!-- (3 products in a row) images + captions -->
+    <div class="row">
+        <div class="col-md-4">
+          <img class="center-block" src="http://placehold.it/250x250">
+          <h4 class="text-center">Cap-Toe Oxfords</h4>
+          <p class="text-center">$99.99</p>
+        </div>
+        <div class="col-md-4">
+          <img class="center-block" src="http://placehold.it/250x250">
+          <h4 class="text-center">Slingback Pumps</h4>
+          <p class="text-center">$129.99</p>
+        </div>
+        <div class="col-md-4">
+          <img class="center-block" src="http://placehold.it/250x250">
+          <h4 class="text-center">Trainers</h4>
+          <p class="text-center">$79.99</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+         <div class="thumbnail center well well-sm text-center">
+            <h2>Sign up Today!</h2>
+                <p>Subscribe to our weekly Newsletter and stay tuned to our new product announcements. Be the first to hear about upcoming live events.  Read about the latest spring fashions and global trends in the world of outdoor and casual footwear. </p>
+                 <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon"></span>
+                        <input type="text" class="form-control" placeholder="your@email.com">
+                        <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Sign up</button>
+                    </span>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d392565.2037547804!2d-105.13529645012136!3d39.76400211690762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b80aa231f17cf%3A0x118ef4f8278a36d6!2sDenver%2C+CO!5e0!3m2!1sen!2sus!4v1453852883737" width="150" height="150" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-3">
+        <h4>Products That We Love</h4>
+        <table class="lamp">
+        <tr>
+          <th>
+            <img src="http://orig05.deviantart.net/1dcf/f/2012/311/a/1/pokemon_yellow___haunter_animated_50x50_by_kimihro-d5kbjj5.gif">
+          </th>
+          <td>
+             Shoes
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <img src="http://orig05.deviantart.net/1dcf/f/2012/311/a/1/pokemon_yellow___haunter_animated_50x50_by_kimihro-d5kbjj5.gif">
+          </th>
+          <td>
+             More Shoes
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <img src="http://orig05.deviantart.net/1dcf/f/2012/311/a/1/pokemon_yellow___haunter_animated_50x50_by_kimihro-d5kbjj5.gif">
+          </th>
+          <td>
+             <a href="http://glerupsusa.com/">All The Shoes!</a>
+          </td>
+        </tr>
+        </table>
+      </div>
+      <div class="col-md-3">
+        <h4>Connect With Us!</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://www.twitter.com/">Twitter</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>Favorite Colors</h4>
+        <ul>
+          <li>Rainbow</li>
+          <li>Blue</li>
+          <li>Green</li>
+        </ul>
+      </div>
+    </div> <!-- end .row -->
+  </div> <!-- end .container-fluid -->
+</footer>
 
 {% endblock %}
